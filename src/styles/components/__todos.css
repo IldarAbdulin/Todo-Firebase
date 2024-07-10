@@ -1,0 +1,74 @@
+.todos {
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0;
+  .todos__search {
+    margin: 0 0 40px 0;
+    display: flex;
+    align-items: center;
+    input {
+      padding: 10px 20px;
+      width: 100%;
+      color: aliceblue;
+      outline: none;
+      border: 1px solid #ffffff;
+      border-radius: 10px 0 0 10px;
+      font-size: 18px;
+      &::placeholder {
+        color: rgba(240, 248, 255, 0.455);
+      }
+    }
+    button {
+      padding: 10px 31px;
+      background: blueviolet;
+      outline: none;
+      font-size: 18px;
+      color: aliceblue;
+      letter-spacing: 0.5px;
+      border-radius: 0px 10px 10px 0px;
+      cursor: pointer;
+      transition: 0.2s;
+      &:hover {
+        background: rgb(123, 37, 203);
+        color: aliceblue;
+      }
+    }
+  }
+  .todos__todo {
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    p {
+      color: aliceblue;
+      font-size: 18px;
+    }
+    div {
+      display: flex;
+      gap: 5px;
+      button {
+        padding: 5px 15px;
+        font-size: 18px;
+        color: #222;
+        letter-spacing: 1px;
+        border: 1px solid aliceblue;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .delete {
+        background: rgb(226, 43, 101);
+      }
+      .complete {
+        background: rgb(43, 226, 125);
+        &:disabled {
+          background: rgb(19, 153, 80);
+          cursor: default;
+        }
+      }
+    }
+  }
+}
